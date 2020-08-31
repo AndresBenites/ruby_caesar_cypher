@@ -7,8 +7,6 @@ def substrings(*strings, dict)
       if subst.downcase.include?(word.downcase)
         if return_hash.has_key?(word.downcase)
           return_hash[word] += 1
-        else
-          return_hash[word] = 1
         end
       end
     end
